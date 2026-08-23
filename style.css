@@ -2,7 +2,6 @@
   --bg: #ece6dc;
   --ink: #211f1a;
   --ink-soft: #3f3a32;
-  --muted: #8a8377;
   --rule: #cdc5b6;
 }
 
@@ -129,14 +128,6 @@ body {
   letter-spacing: 0.01em;
   color: var(--ink-soft);
   animation-delay: 1.15s;
-}
-
-.tagline {
-  margin-top: 10px;
-  font-style: italic;
-  font-size: clamp(0.85rem, 1.2vw, 0.98rem);
-  color: var(--muted);
-  animation-delay: 1.35s;
 }
 
 @keyframes revealIn {
