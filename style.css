@@ -3,7 +3,6 @@
   --ink: #211f1a;
   --ink-soft: #3f3a32;
   --muted: #8a8377;
-  --faint: #a9a297;
   --rule: #cdc5b6;
 }
 
@@ -148,26 +147,8 @@ body {
   }
 }
 
-/* Footer */
-
-.footer {
-  position: absolute;
-  bottom: 40px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  animation-delay: 1.7s;
-}
-
-.footer p {
-  font-size: 0.78rem;
-  letter-spacing: 0.02em;
-  color: var(--faint);
-}
-
 @media (max-width: 520px) {
   .letter-space { width: 0.22em; }
-  .footer { bottom: 24px; }
 }
 
 @media (prefers-reduced-motion: reduce) {
