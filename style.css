@@ -2,7 +2,6 @@
   --bg: #ece6dc;
   --ink: #211f1a;
   --ink-soft: #3f3a32;
-  --rule: #cdc5b6;
 }
 
 * {
@@ -99,20 +98,6 @@ body {
   }
 }
 
-/* Rule */
-
-.rule {
-  width: 0;
-  height: 1px;
-  background: var(--rule);
-  margin: 28px 0 26px;
-  animation: ruleIn 0.9s cubic-bezier(0.65, 0, 0.35, 1) 1.05s forwards;
-}
-
-@keyframes ruleIn {
-  to { width: 64px; }
-}
-
 /* Type reveals */
 
 .reveal {
@@ -123,6 +108,7 @@ body {
 }
 
 .subtitle {
+  margin-top: 32px;
   font-size: clamp(1rem, 1.6vw, 1.25rem);
   font-weight: 400;
   letter-spacing: 0.01em;
@@ -143,11 +129,10 @@ body {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .letter, .reveal, .rule, .glow {
+  .letter, .reveal, .glow {
     animation: none !important;
     opacity: 1 !important;
     transform: none !important;
     filter: none !important;
-    width: 64px !important;
   }
 }
